@@ -10,13 +10,17 @@ namespace Hello
     {
         static void Main(string[] args)
         {
-            NewMethod();
+            Powitanie();
 
             Console.ReadKey();
 
         }
-        //
-        private static void NewMethod()
+
+
+        /// <summary>
+        /// Odczytuje imie z konsoli i wita po imieniu
+        /// </summary>
+        private static void Powitanie()
         {
             Console.Write("Podaj swoje imie: ");
             string name = Console.ReadLine();
