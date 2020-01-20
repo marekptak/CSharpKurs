@@ -10,8 +10,17 @@ namespace Hello
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Witaj świecie");
-            Console.WriteLine("drugi commit");
+            NewMethod();
+
+            Console.ReadKey();
+
+        }
+        //
+        private static void NewMethod()
+        {
+            Console.Write("Podaj swoje imie: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Hi " + name);
         }
     }
 }
